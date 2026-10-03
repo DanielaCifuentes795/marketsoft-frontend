@@ -1,16 +1,65 @@
-# React + Vite
+# MarketSoft - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada para el sistema de gestión de supermercado **MarketSoft**.
 
-Currently, two official plugins are available:
+El proyecto corresponde a una **Single Page Application (SPA)** desarrollada con React, que consume mediante Axios la API REST del backend del sistema.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Integrantes
 
-## React Compiler
+- Daniela Cifuentes Rendón
+- Alejandra Salazar Cardona
+- María Paulina Clavijo Salazar
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- React
+- Axios
+- Bootstrap
+- React Router DOM
+- Vite
+- JavaScript
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Módulos del sistema
+
+La aplicación permite gestionar los siguientes módulos:
+
+- Productos
+- Usuarios
+- Proveedores
+- Ventas
+
+Cada módulo permite realizar las operaciones CRUD:
+
+- Visualizar registros
+- Crear registros
+- Actualizar registros
+- Eliminar registros
+
+## Arquitectura
+
+El proyecto utiliza una estructura organizada por responsabilidades:
+
+src/
+├── components/
+│   └── layout/
+│       └── MainLayout.jsx
+│
+├── pages/
+│   ├── HomePage.jsx
+│   ├── ProductsPage.jsx
+│   ├── ProvidersPage.jsx
+│   ├── UsersPage.jsx
+│   └── SalesPage.jsx
+│
+├── services/
+│   ├── api.js
+│   ├── product.service.js
+│   ├── provider.service.js
+│   ├── user.service.js
+│   └── sale.service.js
+│
+├── styles/
+│   └── global.css
+│
+├── App.jsx
+└── main.jsx
